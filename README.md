@@ -24,7 +24,3 @@ yarn dev
 # 构建生产版本
 yarn build
 ```
-
-
-# 数据治理大屏  ：http://27.159.96.75:8090/industrychain/data_governance_screen.git  
-# 数据标注大屏http://27.159.96.75:8090/industrychain/data_annotation_screen.git  
