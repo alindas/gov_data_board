@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Digital Display';
+  src: url('./assets/fonts/Digital Display.eot');
+  /* IE9 Compat Modes */
+  src: url('./assets/fonts/Digital Display.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('./assets/fonts/Digital Display.woff') format('woff'),
+      /* Modern Browsers */
+      url('./assets/fonts/Digital Display.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('./assets/fonts/Digital Display.svg#Digital Display') format('svg');
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'wwDigital';
+  src: url('./assets/fonts/wwDigital.eot');
+  /* IE9 Compat Modes */
+  src: url('./assets/fonts/wwDigital.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('./assets/fonts/wwDigital.woff') format('woff'),
+      /* Modern Browsers */
+      url('./assets/fonts/wwDigital.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('./assets/fonts/wwDigital.svg#wwDigital') format('svg');
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'PingFang-SC-Heavy';
+  src: url('./assets/fonts/PingFang-SC-Heavy.eot');
+  /* IE9 Compat Modes */
+  src: url('./assets/fonts/PingFang-SC-Heavy.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('./assets/fonts/PingFang-SC-Heavy.woff') format('woff'),
+      /* Modern Browsers */
+      url('./assets/fonts/PingFang-SC-Heavy.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('./assets/fonts/PingFang-SC-Heavy.svg#PingFang-SC-Heavy') format('svg');
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'LcdD';
+  src: url('./assets/fonts/LcdD.ttf');
+  /* IE9 Compat Modes */
+  src: url('./assets/fonts/LcdD.ttf?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      /* url('./assets/fonts/PingFang-SC-Heavy.woff') format('woff'), */
+      /* Modern Browsers */
+      /* url('./assets/fonts/PingFang-SC-Heavy.ttf') format('truetype'), */
+      /* Safari, Android, iOS */
+      /* url('./assets/fonts/PingFang-SC-Heavy.svg#PingFang-SC-Heavy') format('svg'); */
+  /* Legacy iOS */
+}
+
+
+body:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #181E25 url(../images/loading-ui.gif) center center no-repeat;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+}
+
+body.loading:after {
+  opacity: 1;
+  z-index: 99;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+margin: 0;
+padding: 0;
+}
+ol,ul {
+list-style: none;
+}
+
+.container-scale {
+  width: 100vw;
+  height: 100vh;
+}
+
+.font-LED {
+  font-family: "wwDigital";
+}
+
+.font-Digital {
+  font-family: "Digital Display";
+}
+
+
+
+label.symbol span {
+  font-family: initial !important;
+}
+
+
+:root {
+  --primary-color: #1e3a8a;
+  --secondary-color: #0ea5e9;
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+}
+
+
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
